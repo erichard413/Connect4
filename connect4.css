@@ -1,0 +1,63 @@
+/* game board table */
+h1 {
+  font-family: 'Passion One', cursive;
+  font-size: 70px;
+  margin: 0;
+}
+
+table:first-child {
+  background-color: teal;
+}
+
+#board td {
+  background-image : url("images/tdbg.png");
+  background-size: 52px;
+  width: 50px;
+  height: 50px;
+  border: solid 1px #666;
+  border-radius: 50%
+}
+
+/* pieces are div within game table cells: draw as colored circles */ -done
+
+.piece {
+  /* TODO: make into circles */
+  border-radius: 50%;
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+}
+
+#player1 {
+  border-radius: 50%;
+  background-image :url("images/bluepiece.png");
+  background-color: blue;
+  width: 50px;
+  height: 50px;
+}
+
+#player2 {
+  border-radius: 50%;
+  background-image : url("images/redpiece.png");
+  background-color: red;
+  width: 50px;
+  height: 50px;
+} 
+
+/* TODO: make pieces red/blue,  depending on player 1/2 piece */
+
+/* column-top is table row of clickable areas for each column */
+#column-top tr {
+  background-color : none;
+}
+
+#column-top td {
+  background-image: none;
+  background-color : none;
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-image : url("images/placepiece.png");
+  background-color: gold;
+}
