@@ -98,7 +98,7 @@ function placeInTable(y, x) {
   // TODO: make a div and insert into correct table cell
   const newPiece = document.createElement('div');
   newPiece.classList.add('piece');
-  newPiece.setAttribute('id', `player${currPlayer}`);
+  newPiece.classList.add(`player${currPlayer}`);
   let newPosition = document.getElementById(`${y}-${x}`)
   newPosition.append(newPiece);
   board[y][x] = currPlayer;

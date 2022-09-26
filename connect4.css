@@ -28,7 +28,7 @@ table:first-child {
   height: 80%;
 }
 
-#player1 {
+.player1 {
   border-radius: 50%;
   background-image :url("images/bluepiece.png");
   background-color: blue;
@@ -36,7 +36,7 @@ table:first-child {
   height: 50px;
 }
 
-#player2 {
+.player2 {
   border-radius: 50%;
   background-image : url("images/redpiece.png");
   background-color: red;
